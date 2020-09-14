@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comment Page</title>
+</head>
+<body>
+
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="managecomment.js"></script>
+
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
+<a href="forapi2assignment.html">Home</a>
+<br>
+<fieldset>
+			<legend>
+				Manage Comment
+			</legend>
+				<table>
+					<tr>
+                        <select id="create_comment_post">
+                            <option value="">
+                                
+                            </option>
+                       
+                       	</select> 
+                    </tr>
+                    <tr>
+                        <td colspan="2">Post Body:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea id="post_body" placeholder="" readonly></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Create Comment:</td> 
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea id="create_comment_body" placeholder="comment"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="create_comment_button">Create</button>
+                            <div id="createcommentmessage"></div>
+                        </td>
+                        
+                    </tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">Update Comment:</td> 
+						
+					</tr>
+					<tr>
+						<td colspan="2">
+							 <select id="updatecomment_post_dropdown">
+							 	
+							
+							  </select> 
+						</td>
+						
+					</tr>
+					<tr>
+						<td> 
+							<select id="updatecomment_comment_dropdown">
+							 	
+							
+							  </select> 
+						</td>
+						<td>
+							<textarea name="update_comment_body" id="update_comment_body"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<button id="update_button">Update</button>
+							<div id="updatecommentmessage"></div>
+						</td>
+						
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">Delete Comment:</td> 
+						
+					</tr>
+
+					<tr>
+						<td >
+							 <select name="deletecommenttitle" id="delete_comment_dropdown">
+							 	
+							
+							</select> 
+						</td>
+
+						
+							
+						<td >
+							<select id="delete_commentlist_load">
+							
+							</select>
+						</td>
+					
+						
+						
+					</tr>
+
+					<tr>
+						<td >
+							<button id="delete_comment_button">Delete</button>
+							<div id="deletecommentmessage"></div>
+						</td>
+
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Comment List by Post:
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<select id="comment_list">
+							
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<table border="2" id="commentlisttable">
+								
+								<tr>
+									<td>
+										Comment Body
+									</td>
+									<td>
+										Post ID
+									</td>
+								</tr>
+
+								
+							</table>
+							
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+
+					
+
+					<tr>
+						<td>
+							Single Comment For a Post:
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<select id="comment_list_single">
+							
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							<select id="comment_list_single_post">
+							
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<table id="singlepostcomment" border="1">
+								<tr>
+									<td>
+										Comment Body
+									</td>
+								</tr>
+								
+								
+							</table>
+							
+						</td>
+					</tr>
+
+					
+
+
+				</table>
+
+		</fieldset>
+
+	</form>
+
+</body>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post Page</title>
+</head>
+<body>
+
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="managepost.js"></script>
+
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
+<a href="forapi2assignment.html">Home</a>
+<br>
+<fieldset>
+			<legend>
+				Manage Post
+			</legend>
+				<table>
+
+					<tr>
+						<td colspan="2">Create Post:</td> 
+						
+					</tr>
+					<tr>
+						<td> <input type="text" name="createposttitle" id="createposttitle" placeholder="Post Title"> </td>
+						<td>
+							<textarea name="createpostbody" id="createpostbody" placeholder="Post Body"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<button id="create_post_button">Create</button>
+							<div id="createpostmessage"></div>
+						</td>
+						
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">Update Post:</td> 
+						
+					</tr>
+					<tr>
+						<td colspan="2">
+							 <select id="updateposttitle">
+							 	<option value="">
+							 		
+							 	</option>
+							
+							</select> 
+						</td>
+						
+					</tr>
+					<tr>
+						<td> <input type="text" name="updateposttitle" id="update_posttitle"> </td>
+						<td>
+							<textarea name="updatepostbody" id="updatepostbody"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<button id="update_post_button">Update</button>
+							<div id="updatepostmessage"></div>
+						</td>
+						
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">Delete Post:</td> 
+						
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							 <select id="deleteposttitle">
+							 	<option value="">
+							 		
+							 	</option>
+							
+							</select> 
+						</td>
+						
+					</tr>
+
+					<tr>
+						<td >
+							<button id="delete_post_button">Delete</button>
+							<div id="deletepostmessage"></div>
+						</td>
+
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<!-- Post List: -->
+							<button id="LoadPosts">Load Posts</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<table border="2" id="postlisttable">
+								<tr>
+								
+									<td>
+										Post Title
+									</td>
+								
+									<td>
+										Post Body
+									</td>
+								</tr>
+								
+							</table>
+							
+						</td>
+					</tr>
+
+				</table>
+				
+		</fieldset>
+
+	</form>
+
+</body>
